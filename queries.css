@@ -1,0 +1,267 @@
+
+@media (max-width: 1400px) {
+
+
+
+
+
+    .subheading {
+        font-size: 1.8rem;
+    }
+
+    .heading-secondary {
+        font-size: 3rem;
+    }
+
+    .grid--2-cols {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+
+@media (max-width: 1091px) {
+    header .navigation .navigation-items a {
+        font-size: 1rem;
+    }
+}
+
+
+
+@media (max-width: 1378px) {
+    .grid--2-cols {
+        grid-template-columns: 1fr;
+    } 
+
+    .pricing-plan--complete::after {
+        top: 8%;
+        right: -10%;
+    }
+}
+
+
+
+
+/* Responsive Sizing  */
+@media (max-width: 990px){
+    header{
+        padding: 12px 20px;
+        transition: 0.5s ease;
+    }
+
+    section{
+        padding: 100px 20px;
+    }
+
+    .home .media-icons{
+        right: 15px;
+    }
+
+    header .navigation{
+        display: none;
+    }
+
+    header .navigation.active{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1, 1, 1, 0.5);
+    }
+
+    .content {
+        margin-left: 60px;
+    }
+
+    .logo-header {
+        margin-left: -60px;
+    }
+
+    header .navigation .navigation-items a{
+        position: relative;
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+    }
+
+    header .navigation .navigation-items a::before{
+        background: #222;
+        height: 2px;
+    }
+
+
+    header .navigation.active .navigation-items{
+        background: #fff;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    }
+
+    .grid {
+        column-gap: 0;
+    }
+
+    .grid--2-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-btn{
+        background-size: 30px;
+        background-position: center;
+        background: url(./images/menu.png)no-repeat;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        margin-right: 30px;
+    }
+
+    .menu-btn.active{
+        z-index: 999;
+        background: url(./images/close.png)no-repeat;
+        background-size: 25px;
+        background-position: center;
+       transition: 0.3s ease; 
+    }
+
+    .pricing-plan {
+        border-radius: 11px;
+        width: 100%;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .section-testimonials {
+          padding: 50px;
+      }
+
+      .testimonial-text {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        margin-bottom: 1.2rem;
+    }
+
+    .cta {
+        display: grid;
+        overflow: hidden;
+        /* 2/3 = 66.6% + 1/3 = 33.3% */
+        grid-template-columns: 2fr 1fr;
+        box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+        border-radius: 11px;
+        background-color: rgb(192, 246, 247);
+      }
+
+
+}
+
+/* MOBILE L */
+
+@media (max-width: 428px) {
+
+    .home .content h1 {
+        font-size: 3.5rem;
+        line-height: 1.3;
+        margin-bottom: 5rem;
+    }
+    .home .content p {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .pricing-plan {
+        border-radius: 11px;
+        width: 100%;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .cta {
+        display: grid;
+        overflow: hidden;
+        /* 2/3 = 66.6% + 1/3 = 33.3% */
+        grid-template-columns: 1fr;
+        box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+        border-radius: 11px;
+        background-color: rgb(192, 246, 247);
+      }
+
+      .pricing-plan--complete::after {
+        top: 5%;
+        right: -20%;
+    }
+
+      .grid--footer {
+        grid-template-columns: 2fr 1fr 1fr;
+      }
+
+}
+
+
+
+
+/* iPhone 11 pro  */
+@media (max-width: 414px) {
+
+    .home .content h1 {
+        font-size: 3.5rem;
+        line-height: 1.3;
+        margin-bottom: 5rem;
+    }
+    .home .content p {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .pricing-plan {
+        border-radius: 11px;
+        width: 100%;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .cta {
+        display: grid;
+        overflow: hidden;
+        /* 2/3 = 66.6% + 1/3 = 33.3% */
+        grid-template-columns: 1fr;
+        box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+        border-radius: 11px;
+        background-color: rgb(192, 246, 247);
+      }
+
+      .pricing-plan--complete::after {
+        top: 5%;
+        right: -20%;
+    }
+
+      .grid--footer {
+        grid-template-columns: 2fr 1fr 1fr;
+      }
+
+    .video-slide{
+        position: absolute;
+        width: 100%;
+        clip-path: circle(0% at 0 50%);
+    }
+    
+    .video-slide.active{
+        clip-path: circle(150% at 0 50%);
+        transition: 2s ease;
+        transition-property: clip-path;
+    }
+    
+
+}
+
+

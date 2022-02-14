@@ -1,0 +1,622 @@
+/*******************/
+/* HEADER SECTION */
+/*******************/
+header {
+    display: flex;
+    position: absolute;
+    padding: 1.5em 200px;
+    z-index: 999;
+    width: 100%;
+    padding: 12px 20px;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+header .brand {
+    color: black;
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .navigation {
+    position: relative;
+    display: flex;
+    
+} 
+header .navigation .navigation-items a{
+    position: relative;
+    color:#fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 100px;
+    transition: 0.4s ease;
+}
+
+
+
+
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+
+
+.sign-up {
+    font-size: 1.4rem;
+}
+
+
+
+/*******************/
+/* HERO SECTION  */
+/*******************/
+section {
+    padding: 100px 200px;
+}
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.hero-text {
+    font-weight: bold;
+}
+
+
+
+
+.home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 30px;
+}
+
+.home .content h1{
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 75px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.home .content p{
+    margin-bottom: 50px;
+    line-height: 1.4;
+    font-size: 2rem;
+    max-width: 400px;
+}
+
+.home .content a{
+    background-color: white;
+    padding: 15px 35px;
+    color: #04afa7;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 14px;
+    transition: 0.3 ease;
+}
+.home .content a:hover{
+    background-color: #6ae6db;
+    color: #ffffff;
+    font-weight: 800;
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+
+.home .media-icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+
+/* Side social media bar */
+.home .media-icons a{
+    color: white;
+    font-size: 1.5em;
+    transition: 0.3s ease;
+}
+.home .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.home .media-icons a:hover{
+    transform: scale(1.3);
+}
+
+.home video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-navigation{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+
+
+.slider-navigation .nav-btn{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+}
+
+.slider-navigation .nav-btn.active{
+    background: #04afa7;
+}
+
+
+
+.slider-navigation .nav-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.slider-navigation .nav-btn:hover{
+    transform: scale(1.2);
+}
+
+.video-slide{
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.video-slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
+}
+
+.logo-header {
+  width: 30rem;
+  height: auto;
+}
+
+
+
+/*******************/
+/* GALLERY SECTION  */
+/*******************/
+
+.subheading {
+    display: block;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.4rem;
+    font-weight: 500;
+    color: #6AE6DB;
+    letter-spacing: 0.75px;
+}
+
+.heading-secondary {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+
+.section-subtext {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.8rem;
+    margin-left: 7px;
+    margin-bottom: 30px;
+}
+
+ .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 1.6rem;
+    align-items: center;
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item {
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .gallery-item img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  /*******************/
+  /* PRICING SECTION */
+  /*******************/
+
+  .section-pricing {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .pricing-plan {
+    border-radius: 11px;
+    width: 75%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+
+  .btnG {
+      background-color: rgb(142, 255, 172);
+      color: rgb(32, 32, 32);
+  }
+
+  .pricing-plan--starter {
+    border: 2px solid #AEFEFF;
+    padding: 4.6rem;
+    margin-top: 4rem;
+  }
+  
+  .pricing-plan--starter:hover,
+  .pricing-plan--starter:active {
+    transform: scale(1.05);
+  }
+  
+  .pricing-plan--complete {
+    background-color: #AEFEFF;
+    padding: 4.8rem;
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+    margin-top: 4rem;
+  }
+  
+  .pricing-plan--complete:hover,
+  .pricing-plan--complete:active {
+    transform: scale(1.1);
+  }
+  
+  .pricing-plan--complete::after {
+    content: "Best Value";
+    position: absolute;
+    top: 6%;
+    right: -18%;
+  
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: #ffd43b;
+  
+    padding: 0.8rem 8rem;
+    color: #333;
+    transform: rotate(45deg);
+  }
+  
+  .plan-header {
+    text-align: center;
+    margin-bottom: 4.8rem;
+  }
+  
+  .plan-name {
+    color: #548CFF;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+    margin-bottom: 3.2rem;
+  }
+  
+  .plan-price {
+    font-size: 7.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.6rem;
+  }
+  
+  .plan-price span {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-right: 0.8rem;
+  }
+  
+  .plan-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #6f6f6f;
+  }
+  
+
+
+  .plan-sign-up {
+    text-align: center;
+    margin-top: 4.8rem;
+  }
+  
+  .plan-details {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.75;
+    color: #666;
+  }
+
+
+  .list-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22; 
+
+    }
+
+    .list li {
+        list-style: none;
+    }
+
+    .list-item {
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        line-height: 3;
+
+    }
+
+
+  /*******************/
+/* TESTIMONIALS */
+/*******************/
+
+.section-testimonials {
+    background-color: rgb(236, 255, 249);
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+    column-gap: 8rem;
+  }
+  
+  .testimonials-container {
+    padding: 9.6rem;
+  }
+  
+  .testimonial-img {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+  }
+  
+  .testimonial-name {
+    font-size: 1.6rem;
+    color: #6f6f6f;
+  }
+
+
+  .mb {
+      margin-bottom: 7rem;
+  }
+
+
+/*******************/
+/* CTA SECTION */
+/*******************/
+.cta {
+    display: grid;
+    overflow: hidden;
+    /* 2/3 = 66.6% + 1/3 = 33.3% */
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+    background-color: rgb(192, 246, 247);
+  }
+
+  
+  .cta-text-box {
+    color: #3d3d3d;
+    padding: 4.8rem 6.4rem;
+  }
+  
+  .cta .heading-secondary {
+    color: black;
+    margin-bottom: 3.2rem;
+  }
+  
+  .cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+  }
+  
+  .cta-image-box {
+    background-image: url("Bali-Gallery/1.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .cta-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+  }
+  
+  .cta-form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+  }
+  
+  .cta-form input,
+  .cta-form select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    background-color: #e9fdf8;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cta-form input::placeholder {
+    color: #aaa;
+  }
+  
+  .cta *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem hsla(27, 83%, 95%, 0.5);
+  }
+
+
+  .btn--cta {
+    background-color: #6ae6db;
+    color: #ffffff;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 14px;
+    transition: 0.3s ease-in-out;
+    border: none;
+    max-width: 20rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn--cta:hover {
+      transform: scale(1.1);
+  }
+
+
+
+/*******************/
+/* FOOTER SECTION*/
+/*******************/
+
+.footer {
+    padding: 12.8rem 0;
+    border-top: 1px solid #eee;
+  }
+
+ .logo-footer {
+    width: 15rem;
+    height: auto;
+
+  }
+  
+  .grid--footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  }
+  
+  .logo-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .footer-logo {
+    display: block;
+    margin-bottom: 3rem;
+  }
+  
+  .social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+  }
+  
+  .social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+  
+  .copyright {
+    font-size: 1.4rem;
+    color: #767676;
+    line-height: 1.6;
+    margin-top: auto;
+    padding-bottom: 20px;
+  }
+  
+  .footer-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+  }
+  
+  .contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  
+  .address {
+    margin-bottom: 2.4rem;
+  }
+  
+  .footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  
+  .footer-link:link,
+  .footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-link:hover,
+  .footer-link:active {
+    color: #555;
+  }
